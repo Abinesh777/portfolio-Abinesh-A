@@ -1,0 +1,99 @@
+
+h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+ font-family: 'Times New Roman', Times, serif;
+}
+h5{
+    font-family: 'Times New Roman', Times, serif;
+}
+h4{
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.img-card {
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
+}
+
+.img-card:hover {
+  transform: scale(1);
+}
+
+
+.col {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative; /* needed for z-index */
+}
+
+.col:hover {
+  transform: translateY(-5px) scale(1.02);  /* gentler scale + lift */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  z-index: 2;  /* bring to front */
+}
+
+.product-img {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.product-img:hover {
+  transform: scale(1.05);
+  opacity: 0.95;
+}
+.img-fluid {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+
+.col-lg-6:nth-child(2) {
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.col-lg-6:nth-child(2):hover {
+  transform: translateX(5px);
+}
+
+.btn-dark {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-dark:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.rotating-overlay {
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.logo-box {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.logo-box:hover {
+  transform: scale(1.08);
+  opacity: 0.95;
+}
+
