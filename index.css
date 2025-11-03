@@ -612,5 +612,9 @@ h3.category-title {
 
   .about-text p {
     font-size: 0.95rem;
+    justify-content: center;
+    text-align: justify;
   }
 }
+
+
